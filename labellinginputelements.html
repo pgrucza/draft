@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Labelling Input Elements
+    </title>
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- first draft 2018/09/22 -->
+    
+</head>
+<body>
+
+<main class="">
+    <h1>Labelling Input Elements</h1>
+        <h2>label for using for/id</h2>
+            <label for="idValue1">label using for/id</label> <input type="text" name="idValue1name" id="idValue1">
+            
+        <h2>label wrapping input</h2>
+            <label>label wrapping <input type="text" name="idValue2name" id="idValue2"></label>
+            
+        <h2>label wrapping input with for/id</h2>
+            <label for="idValue3">labelValue wrapping with for/id<input type="text" name="idValue3name" id="idValue3"></label>
+            
+        <h2>label wrapping input with text before &amp; after input</h2>
+            <label>label before <input type="text" name="idValue4name" id="idValue4"> and after</label>
+        
+        <h2>label wrapping input with text before &amp; after input with for/id</h2>
+            <label for="idValue5">label before <input type="text" name="idValue5name" id="idValue5"> and after</label>
+            
+        <h2>label using aria-labelledby</h2>
+            <label id="label6">aria-labelledby</label> <input type="text" name="idValue6name" id="idValue6" aria-labelledby="label6" >
+            
+        <h2>label wrapping input using aria-labelledby</h2>
+            <label id="label7">aria-labelledby and <input type="text"  id="idValue7" aria-labelledby="label7" > wrapping </label>
+        
+        <h2>legend & label with for/id</h2>
+            <fieldset>
+                <legend>legend</legend>
+                <label for="idValue8">label in fieldset</label> <input type="text" name="idValue8name" id="idValue8">
+            </fieldset>
+            
+       
+    
+        <code> 
+        <xmp>
+            <fieldset>
+                <legend>legend</legend>
+                <label for="idValue8">label in fieldset</label> <input type="text" name="idValue8name" id="idValue8">
+            </fieldset>
+         </xmp>
+        </code>
+             
+            
+                   
+</main>
+
+</body>
+</html>
+
