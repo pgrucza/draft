@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Labelling Input Elements
+        Labelling Input Elements Tests
     </title>
     
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,44 +14,306 @@
 <body>
 
 <main class="">
-    <h1>Labelling Input Elements</h1>
-        <h2>label for using for/id</h2>
+    <h1>Testing the Labelling of Input Elements</h1>
+    <h2>Test Environment</h2>
+    <ul>
+        <li>macOS 10.13.6
+        <ul>
+             <li>Safari  11.1.2 and VoiceOver 8</li>
+             <li>Chrome 68.0 and VoiceOver 8</li>
+            
+        </ul>
+        </li>
+        <li>Windows 10
+        <ul>
+             <li>Firefox 62.0 and NVDA 2018.3.1 </li>
+             <li>IE 11 and NVDA 2018.3.1  </li>
+        </ul>            
+        </li>
+    </ul>
+   <h2>Test Resuls</h2>
+
+<table>
+    <caption>
+
+Text exposed by browsers as the form control name. Determined using  developer inspection tools where available. For IE Accessiblity Viewer 2.0.3 was used.
+
+    </caption>
+    <thead>
+    <tr >
+    <th >Labelling Method</th>
+    <th >macOS Safari</th>
+    <th >macOS Chrome</th>
+    <th >Windows Firefox</th>
+    <th >Windows IE</th>
+  
+    </tr>
+    </thead>
+ <tr >
+  <th scope="row" >label for using for/id</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >label wrapping input with for/id</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >label wrapping input with text before &amp; after input</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input with text before &amp; after input with for/id</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label using aria-labelledby</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input using aria-labelledby</th>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td >label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >legend &amp; label with for/id</th>
+  <td >label not legend <br>(fieldset No matching ARIA role)</td>
+  <td >label not legend <br>(role: Legend for legend, fieldset no computed properties)</td>
+  <td >label not legend</td>
+  <td >label not legend</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">Row9</th>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">Row10</th>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+ </tr>
+</table>
+
+
+<table>
+    <caption>
+
+Text announced by screen readers as the form control name
+    </caption>
+    <thead>
+    <tr >
+    <th >Labelling Method</th>
+    <th >macOS Safari &amp; VoiceOver</th>
+    <th >macOS Chrome &amp; VoiceOver</th>
+    <th >Windows Firefox &amp; NVDA</th>
+    <th >Windows IE &amp; NVDA</th>
+  
+    </tr>
+    </thead>
+ <tr >
+  <th scope="row" >label for using for/id</th>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input</th>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >label wrapping input with for/id</th>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >label wrapping input with text before &amp; after input</th>
+  <td >reads label</td>
+  <td >reads label repeats label portion before input</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input with text before &amp; after input with for/id</th>
+  <td >reads label</td>
+  <td >reads label repeats label portion before input</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label using aria-labelledby</th>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">label wrapping input using aria-labelledby</th>
+  <td >reads label</td>
+  <td >reads label repeats label portion before input</td>
+  <td >reads label</td>
+  <td >reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row" >legend &amp; label with for/id</th>
+  <td >label, edit text, legend, legend group (when tabbing to element)<br>
+  label, edit text, (only when "Read next item")</td>
+  <td >reads label not legend </td>
+  <td >"legend grouping" then reads label</td>
+  <td >"legend grouping" then reads label</td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">Row9</th>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+ </tr>
+ <tr >
+  <th scope="row">Row10</th>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+  <td ></td>
+ </tr>
+</table>
+
+   <h2>Test Cases</h2>
+    
+        <h3>label for using for/id</h3>
             <label for="idValue1">label using for/id</label> <input type="text" name="idValue1name" id="idValue1">
-            
-        <h2>label wrapping input</h2>
+        
+        <xmp>
+            <label for="idValue1">label using for/id</label> <input type="text" name="idValue1name" id="idValue1">
+        </xmp>
+        
+        <h3>label wrapping input</h3>
             <label>label wrapping <input type="text" name="idValue2name" id="idValue2"></label>
-            
-        <h2>label wrapping input with for/id</h2>
+        
+        <xmp>
+            <label>label wrapping <input type="text" name="idValue2name" id="idValue2"></label>
+        </xmp> 
+        
+        <h3>label wrapping input with for/id</h3>
             <label for="idValue3">labelValue wrapping with for/id<input type="text" name="idValue3name" id="idValue3"></label>
-            
-        <h2>label wrapping input with text before &amp; after input</h2>
+        
+        <xmp>
+            <label for="idValue3">labelValue wrapping with for/id<input type="text" name="idValue3name" id="idValue3"></label>
+        </xmp>
+        
+        <h3>label wrapping input with text before &amp; after input</h3>
             <label>label before <input type="text" name="idValue4name" id="idValue4"> and after</label>
         
-        <h2>label wrapping input with text before &amp; after input with for/id</h2>
+        <xmp>
+            <label>label before <input type="text" name="idValue4name" id="idValue4"> and after</label>
+        </xmp>
+        
+        <h3>label wrapping input with text before &amp; after input with for/id</h3>
             <label for="idValue5">label before <input type="text" name="idValue5name" id="idValue5"> and after</label>
+        
+        <xmp>
+            <label for="idValue5">label before <input type="text" name="idValue5name" id="idValue5"> and after</label>
+        </xmp>
             
-        <h2>label using aria-labelledby</h2>
+        <h3>label using aria-labelledby</h3>
             <label id="label6">aria-labelledby</label> <input type="text" name="idValue6name" id="idValue6" aria-labelledby="label6" >
-            
-        <h2>label wrapping input using aria-labelledby</h2>
+        
+        <xmp>
+            <label id="label6">aria-labelledby</label> <input type="text" name="idValue6name" id="idValue6" aria-labelledby="label6" >
+        </xmp>
+        
+        <h3>label wrapping input using aria-labelledby</h3>
             <label id="label7">aria-labelledby and <input type="text"  id="idValue7" aria-labelledby="label7" > wrapping </label>
         
-        <h2>legend & label with for/id</h2>
+        <xmp>
+            <label id="label7">aria-labelledby and <input type="text"  id="idValue7" aria-labelledby="label7" > wrapping </label>
+        </xmp>
+        
+         <h3>legend &amp; label with for/id</h3>
             <fieldset>
                 <legend>legend</legend>
                 <label for="idValue8">label in fieldset</label> <input type="text" name="idValue8name" id="idValue8">
             </fieldset>
             
-       
-    
-        <code> 
         <xmp>
             <fieldset>
                 <legend>legend</legend>
                 <label for="idValue8">label in fieldset</label> <input type="text" name="idValue8name" id="idValue8">
             </fieldset>
-         </xmp>
-        </code>
+        </xmp>
+        
              
             
                    
